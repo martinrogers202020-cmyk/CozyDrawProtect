@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import com.badlogic.gdx.backends.android.AndroidApplication
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration
+import com.cozyprotect.ui.util.GlobalErrorHandler
 
 class GameActivity : AndroidApplication() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,11 @@ class GameActivity : AndroidApplication() {
             useCompass = false
             useImmersiveMode = true
         }
-        initialize(CozyGame(level), config)
+        runCatching { initialize(CozyGame(level), config) }
+            .onFailure { throwable ->
+                GlobalErrorHandler.report(throwable)
+                finish()
+            }
     }
 
     companion object {
