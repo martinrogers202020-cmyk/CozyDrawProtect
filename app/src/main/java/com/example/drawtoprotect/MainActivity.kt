@@ -1,18 +1,20 @@
+// MainActivity.kt
 package com.cozyprotect
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -20,50 +22,39 @@ import com.cozyprotect.ui.screens.MainMenuScreen
 import com.cozyprotect.ui.screens.ResultsScreen
 import com.cozyprotect.ui.screens.SettingsScreen
 import com.cozyprotect.ui.screens.StageSelectScreen
+import com.cozyprotect.ui.theme.CozyBrown
+import com.cozyprotect.ui.theme.CozyCream
+import com.cozyprotect.ui.theme.CozyLavender
 import com.cozyprotect.ui.theme.CozyTheme
 import com.cozyprotect.ui.util.GlobalErrorHandler
 import com.cozyprotect.ui.util.safeNavigate
+import kotlinx.coroutines.delay
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Logcat stacktrace (when pressing Play before fix):
-        // FATAL EXCEPTION: main
-        // android.content.ActivityNotFoundException: Unable to find explicit activity class
-        // {com.cozyprotect/com.cozyprotect.GameActivity}; have you declared this activity in
-        // your AndroidManifest.xml?
-        // 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2236)
-        // 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1912)
-        // 	at android.app.Activity.startActivityForResult(Activity.java:5292)
-        // 	at android.app.Activity.startActivityForResult(Activity.java:5250)
-        // 	at android.app.Activity.startActivity(Activity.java:5656)
-        // 	at com.cozyprotect.ui.screens.StageSelectScreenKt$PackCard$1.invoke(StageSelectScreen.kt:149)
-        // 	at com.cozyprotect.ui.screens.StageSelectScreenKt$PackCard$1.invoke(StageSelectScreen.kt:146)
-        // 	...
 
         Thread.setDefaultUncaughtExceptionHandler { _, throwable ->
             GlobalErrorHandler.report(throwable)
         }
 
         val repository = LevelRepository(this)
+
         setContent {
             CozyTheme {
                 val navController = rememberNavController()
-                val showDialog = remember { mutableStateOf(true) }
-                val errorState by GlobalErrorHandler.errors.collectAsState()
+                val errorState by GlobalErrorHandler.errors.collectAsState(initial = null)
+                var showDialog by remember { mutableStateOf(false) }
 
                 LaunchedEffect(errorState) {
-                    if (errorState != null) {
-                        showDialog.value = true
-                    }
+                    showDialog = errorState != null
                 }
 
-                if (errorState != null && showDialog.value) {
+                if (errorState != null && showDialog) {
                     GlobalErrorDialog(
                         throwable = errorState,
                         onDismiss = {
-                            showDialog.value = false
+                            showDialog = false
                             GlobalErrorHandler.clear()
                         }
                     )
@@ -71,9 +62,7 @@ class MainActivity : ComponentActivity() {
 
                 NavHost(navController = navController, startDestination = "splash") {
                     composable("splash") {
-                        SplashScreen {
-                            navController.safeNavigate("menu")
-                        }
+                        SplashScreen(onFinish = { navController.safeNavigate("menu") })
                     }
                     composable("menu") {
                         MainMenuScreen(
@@ -91,7 +80,7 @@ class MainActivity : ComponentActivity() {
                                     startActivity(intent)
                                 } else {
                                     GlobalErrorHandler.report(
-                                        IllegalStateException(\"GameActivity missing from Manifest\")
+                                        IllegalStateException("GameActivity missing from Manifest")
                                     )
                                 }
                             },
@@ -116,11 +105,9 @@ fun GlobalErrorDialog(throwable: Throwable?, onDismiss: () -> Unit) {
     AlertDialog(
         onDismissRequest = onDismiss,
         confirmButton = {
-            TextButton(onClick = onDismiss) {
-                Text(text = "Okay")
-            }
+            TextButton(onClick = onDismiss) { Text("Okay") }
         },
-        title = { Text(text = "Something went wrong") },
+        title = { Text("Something went wrong") },
         text = {
             Text(
                 text = throwable.message ?: "We hit a cozy hiccup. Please try again.",
@@ -133,26 +120,19 @@ fun GlobalErrorDialog(throwable: Throwable?, onDismiss: () -> Unit) {
 @Composable
 fun SplashScreen(onFinish: () -> Unit) {
     LaunchedEffect(Unit) {
-        kotlinx.coroutines.delay(900)
+        delay(900)
         onFinish()
     }
-    androidx.compose.foundation.layout.Box(
-        modifier = androidx.compose.ui.Modifier
+    Box(
+        modifier = Modifier
             .fillMaxSize()
-            .background(
-                androidx.compose.ui.graphics.Brush.verticalGradient(
-                    listOf(
-                        com.cozyprotect.ui.theme.CozyCream,
-                        com.cozyprotect.ui.theme.CozyLavender
-                    )
-                )
-            ),
-        contentAlignment = androidx.compose.ui.Alignment.Center
+            .background(Brush.verticalGradient(listOf(CozyCream, CozyLavender))),
+        contentAlignment = Alignment.Center
     ) {
         Text(
             text = "Cozy Draw Protect",
             style = MaterialTheme.typography.headlineMedium,
-            color = com.cozyprotect.ui.theme.CozyBrown
+            color = CozyBrown
         )
     }
 }
