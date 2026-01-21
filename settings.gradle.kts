@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CozyDrawProtect"
-include(":app")
+include(":android", ":core")
