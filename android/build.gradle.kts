@@ -1,3 +1,5 @@
+import org.gradle.api.file.RelativePath
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -77,6 +79,7 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-ads:23.0.0")
 
+    implementation("com.badlogicgames.gdx:gdx:$gdxVersion")
     implementation("com.badlogicgames.gdx:gdx-backend-android:$gdxVersion")
 
     implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a")
@@ -103,4 +106,25 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+}
+
+val copyAndroidNatives by tasks.registering(Copy::class) {
+    val natives = configurations.runtimeClasspath.get().filter { it.name.contains("natives") }
+    from(natives.map { zipTree(it) })
+    include("**/*.so")
+    into(layout.projectDirectory.dir("src/main/jniLibs"))
+    eachFile {
+        val segments = relativePath.segments
+        val libIndex = segments.indexOf("lib")
+        if (libIndex != -1 && segments.size > libIndex + 2) {
+            val abi = segments[libIndex + 1]
+            val soName = segments.last()
+            relativePath = RelativePath(true, abi, soName)
+        }
+    }
+    includeEmptyDirs = false
+}
+
+tasks.named("preBuild") {
+    dependsOn(copyAndroidNatives)
 }
