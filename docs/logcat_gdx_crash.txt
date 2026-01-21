@@ -1,0 +1,29 @@
+FATAL EXCEPTION: main
+Process: com.cozyprotect, PID: 31245
+com.badlogic.gdx.utils.SharedLibraryLoadException: Couldn't load shared library 'gdx' for target: Android
+	at com.badlogic.gdx.utils.SharedLibraryLoader.load(SharedLibraryLoader.java:117)
+	at com.badlogic.gdx.utils.SharedLibraryLoader.load(SharedLibraryLoader.java:106)
+	at com.badlogic.gdx.backends.android.AndroidApplication.<clinit>(AndroidApplication.java:75)
+	at com.cozyprotect.GameActivity.onCreate(GameActivity.kt:27)
+	at android.app.Activity.performCreate(Activity.java:8981)
+	at android.app.Activity.performCreate(Activity.java:8950)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1529)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4065)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4246)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:113)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:149)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:103)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2675)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:230)
+	at android.os.Looper.loop(Looper.java:319)
+	at android.app.ActivityThread.main(ActivityThread.java:8919)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:578)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1103)
+Caused by: java.lang.UnsatisfiedLinkError: dlopen failed: library "libgdx.so" not found
+	at java.lang.Runtime.loadLibrary0(Runtime.java:1087)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:1008)
+	at java.lang.System.loadLibrary(System.java:1664)
+	at com.badlogic.gdx.utils.SharedLibraryLoader.load(SharedLibraryLoader.java:97)
+	... 18 more

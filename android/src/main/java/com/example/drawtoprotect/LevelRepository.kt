@@ -3,48 +3,11 @@ package com.cozyprotect
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.File
-
-@Serializable
-enum class HazardType { BEE, ROCK, WIND, HOT_SOUP }
-
-@Serializable
-enum class MaterialType { RUBBER, STONE, ICE, CLOTH }
-
-@Serializable
-data class HazardDefinition(
-    val type: HazardType,
-    val positionX: Float,
-    val positionY: Float
-)
-
-@Serializable
-data class LevelDefinition(
-    val id: String,
-    @SerialName("characterX") val characterX: Float = 4f,
-    @SerialName("characterY") val characterY: Float = 3f,
-    val timeToSurvive: Int,
-    val drawLimit: Int,
-    val hazards: List<HazardDefinition> = emptyList(),
-    val allowedMaterials: List<MaterialType> = listOf(MaterialType.RUBBER, MaterialType.STONE, MaterialType.ICE, MaterialType.CLOTH)
-)
-
-@Serializable
-data class PackProgress(val completed: Int, val stars: Int)
-
-@Serializable
-data class LevelPack(
-    val packId: String,
-    val name: String,
-    val levels: List<LevelDefinition>,
-    val progress: PackProgress = PackProgress(0, 0)
-)
 
 class LevelRepository(private val context: Context) {
     private val json = Json { ignoreUnknownKeys = true }
@@ -86,7 +49,7 @@ class LevelRepository(private val context: Context) {
                     if (!response.isSuccessful) return@use
                     val body = response.body?.string() ?: return@use
                     val pack = json.decodeFromString<LevelPack>(body)
-                    val file = File(getDownloadedPacksDir(), "${pack.packId}.json")
+                    val file = File(getDownloadedPacksDir(), "${'$'}{pack.packId}.json")
                     file.writeText(body)
                 }
             } finally {
