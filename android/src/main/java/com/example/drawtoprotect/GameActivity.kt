@@ -8,28 +8,35 @@ import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration
 import com.cozyprotect.ui.util.GlobalErrorHandler
 
 class GameActivity : AndroidApplication() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val packId = intent.getStringExtra(EXTRA_PACK_ID) ?: "pack_001"
         val levelId = intent.getStringExtra(EXTRA_LEVEL_ID) ?: "001"
+
         val repository = LevelRepository(this)
         val pack = repository.loadPackById(packId)
-        val level = pack?.levels?.firstOrNull { it.id == levelId } ?: LevelDefinition(
-            id = "001",
-            timeToSurvive = 12,
-            drawLimit = 1
-        )
+
+        val level = pack?.levels?.firstOrNull { it.id == levelId }
+            ?: LevelDefinition(
+                id = "001",
+                timeToSurvive = 12,
+                drawLimit = 1
+            )
 
         val config = AndroidApplicationConfiguration().apply {
             useAccelerometer = false
             useCompass = false
             useImmersiveMode = true
         }
-        runCatching { initialize(CozyGame(level), config) }
-            .onFailure { throwable ->
-                GlobalErrorHandler.report(throwable)
-                finish()
-            }
+
+        try {
+            initialize(CozyGame(level), config)
+        } catch (t: Throwable) {
+            GlobalErrorHandler.report(t)
+            finish()
+        }
     }
 
     companion object {

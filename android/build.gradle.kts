@@ -79,14 +79,16 @@ dependencies {
 
     implementation("com.badlogicgames.gdx:gdx-backend-android:$gdxVersion")
 
-    runtimeOnly("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a")
-    runtimeOnly("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a")
-    runtimeOnly("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86")
-    runtimeOnly("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64")
-    runtimeOnly("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a")
-    runtimeOnly("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a")
-    runtimeOnly("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86")
-    runtimeOnly("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64")
+    implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a")
+    implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a")
+    implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86")
+    implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64")
+
+    implementation("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a")
+    implementation("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a")
+    implementation("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86")
+    implementation("com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64")
+
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
