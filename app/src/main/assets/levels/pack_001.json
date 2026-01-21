@@ -1,0 +1,1446 @@
+{
+  "packId": "pack_001",
+  "name": "Cozy Meadows",
+  "levels": [
+    {
+      "id": "001",
+      "characterX": 3.38,
+      "characterY": 3.06,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 3.04,
+          "positionY": 9.96
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "002",
+      "characterX": 5.6,
+      "characterY": 3.02,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 6.57,
+          "positionY": 8.13
+        },
+        {
+          "type": "ROCK",
+          "positionX": 5.73,
+          "positionY": 6.82
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "003",
+      "characterX": 6.35,
+      "characterY": 4.11,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 8.75,
+          "positionY": 11.81
+        },
+        {
+          "type": "ROCK",
+          "positionX": 7.11,
+          "positionY": 13.51
+        },
+        {
+          "type": "ROCK",
+          "positionX": 3.77,
+          "positionY": 11.41
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "004",
+      "characterX": 4.14,
+      "characterY": 4.95,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 1.97,
+          "positionY": 8.66
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "005",
+      "characterX": 5.03,
+      "characterY": 4.56,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 5.71,
+          "positionY": 6.28
+        },
+        {
+          "type": "ROCK",
+          "positionX": 6.95,
+          "positionY": 9.23
+        },
+        {
+          "type": "ROCK",
+          "positionX": 3.94,
+          "positionY": 13.06
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE",
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "006",
+      "characterX": 5.01,
+      "characterY": 4.96,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 6.86,
+          "positionY": 9.75
+        },
+        {
+          "type": "WIND",
+          "positionX": 6.63,
+          "positionY": 13.87
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "007",
+      "characterX": 6.8,
+      "characterY": 3.96,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 4.24,
+          "positionY": 8.75
+        },
+        {
+          "type": "WIND",
+          "positionX": 4.67,
+          "positionY": 8.15
+        },
+        {
+          "type": "BEE",
+          "positionX": 4.07,
+          "positionY": 12.86
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "008",
+      "characterX": 5.34,
+      "characterY": 4.72,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 8.53,
+          "positionY": 9.31
+        },
+        {
+          "type": "WIND",
+          "positionX": 4.32,
+          "positionY": 6.01
+        },
+        {
+          "type": "WIND",
+          "positionX": 4.67,
+          "positionY": 6.22
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER",
+        "ICE",
+        "STONE"
+      ]
+    },
+    {
+      "id": "009",
+      "characterX": 3.44,
+      "characterY": 4.25,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 1.67,
+          "positionY": 6.13
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "010",
+      "characterX": 4.9,
+      "characterY": 3.05,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 2.34,
+          "positionY": 8.04
+        },
+        {
+          "type": "ROCK",
+          "positionX": 6.25,
+          "positionY": 11.19
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "011",
+      "characterX": 3.9,
+      "characterY": 3.79,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 7.37,
+          "positionY": 8.07
+        },
+        {
+          "type": "WIND",
+          "positionX": 8.2,
+          "positionY": 10.08
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "012",
+      "characterX": 5.52,
+      "characterY": 3.12,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 4.57,
+          "positionY": 10.05
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 5.36,
+          "positionY": 7.76
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 2.79,
+          "positionY": 11.19
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "STONE",
+        "ICE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "013",
+      "characterX": 3.63,
+      "characterY": 4.13,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 8.0,
+          "positionY": 8.45
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "ICE",
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "014",
+      "characterX": 3.8,
+      "characterY": 3.2,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 5.72,
+          "positionY": 7.74
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "015",
+      "characterX": 6.43,
+      "characterY": 4.62,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 4.94,
+          "positionY": 13.5
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 3.37,
+          "positionY": 10.0
+        },
+        {
+          "type": "WIND",
+          "positionX": 5.9,
+          "positionY": 9.22
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "016",
+      "characterX": 5.9,
+      "characterY": 3.17,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 2.7,
+          "positionY": 11.4
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 8.46,
+          "positionY": 8.75
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "017",
+      "characterX": 3.46,
+      "characterY": 3.47,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 3.14,
+          "positionY": 8.66
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "018",
+      "characterX": 3.46,
+      "characterY": 4.17,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 3.57,
+          "positionY": 9.25
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "019",
+      "characterX": 6.59,
+      "characterY": 3.22,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 5.53,
+          "positionY": 13.62
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "020",
+      "characterX": 4.68,
+      "characterY": 3.23,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 5.91,
+          "positionY": 6.12
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 1.92,
+          "positionY": 13.08
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "ICE",
+        "CLOTH",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "021",
+      "characterX": 4.27,
+      "characterY": 3.05,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 2.27,
+          "positionY": 12.76
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 8.29,
+          "positionY": 9.03
+        },
+        {
+          "type": "WIND",
+          "positionX": 5.4,
+          "positionY": 11.69
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "CLOTH",
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "022",
+      "characterX": 3.73,
+      "characterY": 3.42,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 4.6,
+          "positionY": 8.51
+        },
+        {
+          "type": "BEE",
+          "positionX": 1.51,
+          "positionY": 8.54
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 1.89,
+          "positionY": 7.72
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "STONE",
+        "ICE"
+      ]
+    },
+    {
+      "id": "023",
+      "characterX": 4.56,
+      "characterY": 3.61,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 1.65,
+          "positionY": 8.25
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE"
+      ]
+    },
+    {
+      "id": "024",
+      "characterX": 5.18,
+      "characterY": 4.16,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 7.34,
+          "positionY": 10.63
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "025",
+      "characterX": 3.3,
+      "characterY": 4.27,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 1.16,
+          "positionY": 7.95
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH",
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "026",
+      "characterX": 6.1,
+      "characterY": 4.97,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 4.75,
+          "positionY": 12.87
+        },
+        {
+          "type": "BEE",
+          "positionX": 5.01,
+          "positionY": 12.36
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "027",
+      "characterX": 4.2,
+      "characterY": 4.07,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 6.67,
+          "positionY": 12.68
+        },
+        {
+          "type": "WIND",
+          "positionX": 2.01,
+          "positionY": 7.65
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "028",
+      "characterX": 4.94,
+      "characterY": 4.59,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 3.02,
+          "positionY": 6.52
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 7.47,
+          "positionY": 10.39
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 7.81,
+          "positionY": 9.63
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "029",
+      "characterX": 3.71,
+      "characterY": 3.63,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 1.5,
+          "positionY": 8.84
+        },
+        {
+          "type": "ROCK",
+          "positionX": 5.75,
+          "positionY": 7.11
+        },
+        {
+          "type": "WIND",
+          "positionX": 4.18,
+          "positionY": 9.21
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE"
+      ]
+    },
+    {
+      "id": "030",
+      "characterX": 6.69,
+      "characterY": 4.53,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 2.91,
+          "positionY": 9.96
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 8.65,
+          "positionY": 11.7
+        },
+        {
+          "type": "WIND",
+          "positionX": 5.48,
+          "positionY": 13.26
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "031",
+      "characterX": 3.34,
+      "characterY": 3.25,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 3.49,
+          "positionY": 11.54
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE",
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "032",
+      "characterX": 5.55,
+      "characterY": 3.77,
+      "timeToSurvive": 12,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 3.0,
+          "positionY": 7.74
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "ICE",
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "033",
+      "characterX": 6.76,
+      "characterY": 4.81,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 5.19,
+          "positionY": 6.72
+        },
+        {
+          "type": "WIND",
+          "positionX": 6.03,
+          "positionY": 8.14
+        },
+        {
+          "type": "BEE",
+          "positionX": 8.68,
+          "positionY": 7.11
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "034",
+      "characterX": 5.4,
+      "characterY": 3.82,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 4.51,
+          "positionY": 10.98
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "035",
+      "characterX": 4.14,
+      "characterY": 4.08,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 3.22,
+          "positionY": 9.03
+        },
+        {
+          "type": "BEE",
+          "positionX": 8.68,
+          "positionY": 10.23
+        },
+        {
+          "type": "BEE",
+          "positionX": 1.25,
+          "positionY": 13.78
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "036",
+      "characterX": 4.14,
+      "characterY": 3.22,
+      "timeToSurvive": 10,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 7.66,
+          "positionY": 9.57
+        },
+        {
+          "type": "ROCK",
+          "positionX": 5.36,
+          "positionY": 9.93
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE"
+      ]
+    },
+    {
+      "id": "037",
+      "characterX": 6.22,
+      "characterY": 3.87,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 5.36,
+          "positionY": 13.72
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "038",
+      "characterX": 3.82,
+      "characterY": 3.01,
+      "timeToSurvive": 14,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 1.01,
+          "positionY": 9.54
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 3.8,
+          "positionY": 10.31
+        },
+        {
+          "type": "WIND",
+          "positionX": 7.26,
+          "positionY": 11.47
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "039",
+      "characterX": 4.56,
+      "characterY": 3.85,
+      "timeToSurvive": 16,
+      "drawLimit": 1,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 8.9,
+          "positionY": 9.69
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 8.5,
+          "positionY": 11.7
+        },
+        {
+          "type": "WIND",
+          "positionX": 6.62,
+          "positionY": 9.6
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "RUBBER",
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "040",
+      "characterX": 6.39,
+      "characterY": 4.53,
+      "timeToSurvive": 10,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 4.94,
+          "positionY": 11.97
+        },
+        {
+          "type": "WIND",
+          "positionX": 6.04,
+          "positionY": 9.26
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH",
+        "ICE"
+      ]
+    },
+    {
+      "id": "041",
+      "characterX": 3.18,
+      "characterY": 4.02,
+      "timeToSurvive": 16,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 7.39,
+          "positionY": 9.29
+        },
+        {
+          "type": "WIND",
+          "positionX": 2.22,
+          "positionY": 12.66
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE",
+        "RUBBER",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "042",
+      "characterX": 3.37,
+      "characterY": 4.27,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 1.54,
+          "positionY": 9.54
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER",
+        "ICE",
+        "STONE"
+      ]
+    },
+    {
+      "id": "043",
+      "characterX": 5.94,
+      "characterY": 4.99,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 2.67,
+          "positionY": 7.66
+        },
+        {
+          "type": "WIND",
+          "positionX": 3.15,
+          "positionY": 6.6
+        },
+        {
+          "type": "WIND",
+          "positionX": 4.74,
+          "positionY": 10.46
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE",
+        "CLOTH",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "044",
+      "characterX": 6.86,
+      "characterY": 4.41,
+      "timeToSurvive": 10,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 4.14,
+          "positionY": 9.2
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 7.32,
+          "positionY": 12.93
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "RUBBER",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "045",
+      "characterX": 5.11,
+      "characterY": 3.28,
+      "timeToSurvive": 12,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 3.53,
+          "positionY": 9.45
+        },
+        {
+          "type": "ROCK",
+          "positionX": 7.28,
+          "positionY": 7.52
+        },
+        {
+          "type": "ROCK",
+          "positionX": 7.97,
+          "positionY": 10.63
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH",
+        "ICE"
+      ]
+    },
+    {
+      "id": "046",
+      "characterX": 3.18,
+      "characterY": 4.62,
+      "timeToSurvive": 10,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 3.89,
+          "positionY": 12.01
+        },
+        {
+          "type": "ROCK",
+          "positionX": 1.93,
+          "positionY": 7.65
+        },
+        {
+          "type": "WIND",
+          "positionX": 1.55,
+          "positionY": 7.82
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "047",
+      "characterX": 5.45,
+      "characterY": 3.35,
+      "timeToSurvive": 12,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 4.96,
+          "positionY": 10.23
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "048",
+      "characterX": 4.81,
+      "characterY": 3.52,
+      "timeToSurvive": 16,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 4.96,
+          "positionY": 9.02
+        },
+        {
+          "type": "ROCK",
+          "positionX": 8.79,
+          "positionY": 7.89
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "049",
+      "characterX": 6.52,
+      "characterY": 4.52,
+      "timeToSurvive": 12,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 8.28,
+          "positionY": 13.96
+        },
+        {
+          "type": "BEE",
+          "positionX": 1.12,
+          "positionY": 6.04
+        },
+        {
+          "type": "HOT_SOUP",
+          "positionX": 3.56,
+          "positionY": 9.07
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE"
+      ]
+    },
+    {
+      "id": "050",
+      "characterX": 3.52,
+      "characterY": 3.93,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 4.1,
+          "positionY": 13.01
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE",
+        "ICE"
+      ]
+    },
+    {
+      "id": "051",
+      "characterX": 4.73,
+      "characterY": 3.38,
+      "timeToSurvive": 16,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 5.3,
+          "positionY": 10.2
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "CLOTH"
+      ]
+    },
+    {
+      "id": "052",
+      "characterX": 6.74,
+      "characterY": 4.18,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 6.96,
+          "positionY": 11.49
+        },
+        {
+          "type": "ROCK",
+          "positionX": 6.3,
+          "positionY": 9.12
+        },
+        {
+          "type": "WIND",
+          "positionX": 8.76,
+          "positionY": 11.13
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "ICE",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "053",
+      "characterX": 5.44,
+      "characterY": 4.94,
+      "timeToSurvive": 10,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 8.24,
+          "positionY": 10.38
+        },
+        {
+          "type": "ROCK",
+          "positionX": 6.69,
+          "positionY": 10.29
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "STONE",
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "054",
+      "characterX": 4.88,
+      "characterY": 3.74,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 8.81,
+          "positionY": 7.21
+        },
+        {
+          "type": "ROCK",
+          "positionX": 7.84,
+          "positionY": 12.82
+        }
+      ],
+      "allowedMaterials": [
+        "STONE",
+        "CLOTH",
+        "ICE",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "055",
+      "characterX": 5.95,
+      "characterY": 3.54,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 5.25,
+          "positionY": 9.55
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "056",
+      "characterX": 6.42,
+      "characterY": 3.61,
+      "timeToSurvive": 16,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "BEE",
+          "positionX": 3.41,
+          "positionY": 12.88
+        },
+        {
+          "type": "BEE",
+          "positionX": 6.86,
+          "positionY": 8.51
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "ICE"
+      ]
+    },
+    {
+      "id": "057",
+      "characterX": 3.52,
+      "characterY": 4.63,
+      "timeToSurvive": 10,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 3.64,
+          "positionY": 8.71
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "058",
+      "characterX": 5.13,
+      "characterY": 3.84,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "ROCK",
+          "positionX": 2.6,
+          "positionY": 9.11
+        },
+        {
+          "type": "WIND",
+          "positionX": 1.78,
+          "positionY": 8.76
+        }
+      ],
+      "allowedMaterials": [
+        "ICE",
+        "STONE",
+        "CLOTH",
+        "RUBBER"
+      ]
+    },
+    {
+      "id": "059",
+      "characterX": 6.92,
+      "characterY": 3.96,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "WIND",
+          "positionX": 3.6,
+          "positionY": 11.99
+        },
+        {
+          "type": "BEE",
+          "positionX": 5.21,
+          "positionY": 7.19
+        }
+      ],
+      "allowedMaterials": [
+        "CLOTH",
+        "RUBBER",
+        "STONE"
+      ]
+    },
+    {
+      "id": "060",
+      "characterX": 4.23,
+      "characterY": 4.2,
+      "timeToSurvive": 14,
+      "drawLimit": 2,
+      "hazards": [
+        {
+          "type": "HOT_SOUP",
+          "positionX": 7.53,
+          "positionY": 13.4
+        },
+        {
+          "type": "BEE",
+          "positionX": 2.08,
+          "positionY": 10.19
+        },
+        {
+          "type": "WIND",
+          "positionX": 7.27,
+          "positionY": 11.62
+        }
+      ],
+      "allowedMaterials": [
+        "RUBBER",
+        "CLOTH",
+        "STONE"
+      ]
+    }
+  ],
+  "progress": {
+    "completed": 0,
+    "stars": 0
+  }
+}
